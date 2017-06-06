@@ -1,7 +1,7 @@
 actor Main
   new create(env: Env) =>
-    var a = A[String]("Hello")
-    var myclass = MyClass[String](a)
+    var a = A("Hello")
+    var myclass = MyClass(a)
 
 class A[S]
   var _s: S

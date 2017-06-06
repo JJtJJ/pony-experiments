@@ -1,8 +1,10 @@
 actor Main
   new create(env: Env) =>
-    MyClass.someMethod("Hello")
+    A.foo("Hello")
+    A.bar(U32(52), "Hello")
 
-class MyClass
+class A
 
-  fun someMethod[T](t: T) =>
-    None
+  fun foo[T](t: T) => None
+
+  fun bar[T, S](t: T, s: S) => None
